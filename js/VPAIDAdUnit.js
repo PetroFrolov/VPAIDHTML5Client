@@ -100,6 +100,8 @@ VPAIDAdUnit.prototype.initAd = function initAd(width, height, viewMode, desiredB
         videoSlot: this._videoEl*/
     }, environmentVars || {});
 
+    width = parseInt(width);
+    height = parseInt(height);
     setTimeout(function () {
         var error;
         try {
